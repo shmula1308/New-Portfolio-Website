@@ -219,6 +219,10 @@ summary {
  ***********
  *************/
 
+section {
+  margin-bottom: 6em;
+}
+
 .section__title {
   color: #777776;
   padding: 0.5em;
@@ -229,12 +233,12 @@ summary {
 /* PROJECTS SECTION */
 
 .projects__container {
-  max-width: 1500px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2em;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+  padding: 0 1.5em;
   margin: 3em auto;
-  justify-content: center;
 }
 
 .projects__card {
@@ -268,6 +272,8 @@ summary {
   margin-bottom: 1em;
 }
 
+/* OVERLAY ON PROJECTS CARDS */
+
 .overlay {
   position: absolute;
   background-color: #87ceeb;
@@ -294,7 +300,6 @@ summary {
   justify-content: space-between;
   align-items: center;
   margin-top: 2em;
-  flex-basis: 15%;
   padding: 0 0.4em;
 }
 
@@ -315,7 +320,7 @@ summary {
 
 .overlay__links {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-basis: 30%;
 }
 
@@ -334,5 +339,36 @@ summary {
 }
 
 .overlay__links a:hover {
-  background-color: #d75e3d;
+  background-color: #777776;
+  color: #ffffff;
+}
+
+.mini-projects__container {
+  max-width: 1150px;
+  min-height: 600px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+  background-color: #ffffff;
+  color: #d75e3d;
+  padding: 2em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 4px;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+}
+
+.mini-projects__title {
+  font-size: 2rem;
+  color: #777776;
+}
+
+.mini-projects__container details {
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+.mini-projects__container summary {
+  margin-bottom: 1em;
 }
