@@ -215,12 +215,12 @@ summary {
 
 /***********
 ************
- SECTIONS GEBERAL STYILING 
+ SECTIONS GENERAL STYILING 
  ***********
  *************/
 
 section {
-  margin-bottom: 6em;
+  margin-bottom: 3em;
 }
 
 .section__title {
@@ -230,9 +230,36 @@ section {
   background-color: #ffffff;
 }
 
+.section__title details {
+  background-color: #d75e3d;
+  color: #ffffff;
+  width: fit-content;
+  padding: 0 5px;
+}
+
+/* ABOUT SECTION */
+
+.about__container {
+  width: 95%;
+  max-width: 1150px;
+  margin: 3em auto;
+  color: #333333;
+  font-weight: 300;
+  font-size: 1.6rem;
+  background-color: #ffffff;
+  padding: 3em 1.5em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 4px;
+}
+
+.about__container p {
+  margin-bottom: 1em;
+}
+
 /* PROJECTS SECTION */
 
 .projects__container {
+  width: 95%;
   max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -343,7 +370,10 @@ section {
   color: #ffffff;
 }
 
+/* MINI PROJECTS SECTION */
+
 .mini-projects__container {
+  width: 95%;
   max-width: 1150px;
   min-height: 600px;
   margin: 0 auto;
@@ -371,4 +401,32 @@ section {
 }
 .mini-projects__container summary {
   margin-bottom: 1em;
+}
+
+/* SKILLS SECTION */
+
+.skills__container img {
+  max-width: 80px;
+  margin: 0 auto;
+}
+
+.skills__container {
+  width: 95%;
+  margin: 3em auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1150px;
+  min-height: 400px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 4px;
+  padding: 3em 1.5em;
+}
+
+.skills__container span {
+  text-align: center;
+  display: block;
+  color: black;
+  margin-top: 10px;
 }
